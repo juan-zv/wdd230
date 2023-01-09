@@ -6,4 +6,15 @@ body {
     margin: auto 30%;
     display: grid;
     grid-template-columns: auto;
+    background-color: #121212;
+}
+
+h1, h2, h3, h4 {
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #282828;
+    
+    
 }
