@@ -9,11 +9,11 @@ body {
     background-color: #121212;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .last-updated {
     color: #FFFFFF;
 }
 
-header {
+header, footer {
     background-color: #282828;
     
     
