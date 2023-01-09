@@ -1,0 +1,9 @@
+body {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 30%;
+    display: grid;
+    grid-template-columns: auto;
+}
