@@ -1,23 +1,27 @@
 body {
-    max-width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 30%;
+    max-width: 1fr;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #121212;
 }
 
+main {
+    grid-column: 2/3;
+    background-color: #202124;
+    border-radius: 10px;
+}
+
 a, li, h1, h2, h3, h4, .last-updated {
-    color: #FFFFFF;
+    color: #e8eaed;
 }
 
 header, footer {
-    background-color: #282828;
+    background-color: #303134;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
+    grid-column: 2/3;
 }
 
 img {
