@@ -9,12 +9,23 @@ body {
     background-color: #121212;
 }
 
-h1, h2, h3, h4, .last-updated {
+a, li, h1, h2, h3, h4, .last-updated {
     color: #FFFFFF;
 }
 
 header, footer {
     background-color: #282828;
-    
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 150px;
+    grid-column: 1/2;
+    border-radius: 10px;
+}
+
+footer h1 {
+    grid-column: 1/3;
 }
