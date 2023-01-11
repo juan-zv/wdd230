@@ -10,10 +10,14 @@ main {
     grid-column: 2/3;
     background-color: #202124;
     border-radius: 10px;
+    margin: 2%;
 }
 
 a, li, h1, h2, h3, h4, .last-updated {
     color: #e8eaed;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 header, footer {
@@ -22,6 +26,8 @@ header, footer {
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
     grid-column: 2/3;
+    margin: 2%;
+
 }
 
 img {
@@ -29,7 +35,7 @@ img {
     grid-column: 1/2;
     border-radius: 10px;
     padding: 20px;
-    /*border-radius: 10px;*/
+    border-radius: 15%;
 }
 
 footer h1 {
