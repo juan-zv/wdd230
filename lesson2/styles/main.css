@@ -1,1 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital@1&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Oswald", sans-serif, "Roboto Mono", monospace, 'Times New Roman';
+    
+}

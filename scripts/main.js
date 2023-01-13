@@ -3,8 +3,8 @@ let year = date.getFullYear();
 
 console.log(year)
 
-document.querySelector('h1').innerHTML = '&copy;' + year + " Juan Zurita - Idaho";
+document.querySelector('.year-name').innerHTML = '&copy;' + year + " Juan Zurita - Idaho";
 
 let currentDate = document.lastModified;
 
-document.querySelector('div').textContent = `Last Updated: ${currentDate}`;
+document.querySelector('.last-updated').textContent = `Last Updated: ${currentDate}`;
