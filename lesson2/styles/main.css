@@ -4,3 +4,34 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Oswald", sans-serif, "Roboto Mono", monospace, 'Times New Roman';
     
 }
+
+header h1, header h2{
+    text-align: center;
+}
+
+section {
+    padding: 5%;
+    align-content: center;
+    text-align: center;
+    border-top: 0.2em black solid;
+}
+
+section h2, section h3 {
+    text-align: center;
+}
+
+section a {
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+footer {
+    border-top: 0.2em black solid;
+    text-align: center;
+}
