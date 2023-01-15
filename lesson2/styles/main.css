@@ -35,3 +35,19 @@ footer {
     border-top: 0.2em black solid;
     text-align: center;
 }
+
+
+@media screen and (min-width:600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width:1080px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
