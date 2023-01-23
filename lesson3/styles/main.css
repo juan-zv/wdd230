@@ -1,0 +1,28 @@
+
+
+
+header {
+    border-bottom: 0.2em solid black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+ul, ul li, ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home, #target-audience, #design {
+    margin: 1em;
+    padding: 15em 0.5em;
+    border-bottom: 3px solid black;
+}
