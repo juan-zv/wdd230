@@ -1,5 +1,10 @@
 
 
+body {
+    max-width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
 
 header {
     border-bottom: 0.2em solid black;
@@ -13,6 +18,7 @@ ul, ul li, ul li a {
     text-decoration: none;
     list-style-type: none;
     padding: 1em;
+    color: black;
 }
 
 ul {
@@ -29,9 +35,12 @@ ul {
 
 .logo {
     max-width: 10em;
-    align-self: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .color-schema {
-    max-width: 30em;
+    max-width: 40em;
+    display: block;
+    margin: 0 auto;
 }
