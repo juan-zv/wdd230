@@ -26,3 +26,12 @@ ul {
     padding: 15em 0.5em;
     border-bottom: 3px solid black;
 }
+
+.logo {
+    max-width: 10em;
+    align-self: center;
+}
+
+.color-schema {
+    max-width: 30em;
+}
