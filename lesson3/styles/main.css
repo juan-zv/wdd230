@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Roboto:ital,wght@1,500&display=swap');
 body {
     max-width: 70%;
     align-items: center;
@@ -12,6 +11,15 @@ header {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+#design p {
+    text-align: center;
+}
+
+li, a, p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul, ul li, ul li a {
