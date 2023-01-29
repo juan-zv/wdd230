@@ -1,0 +1,90 @@
+header, footer {
+    background-color: #595959;
+    border-radius: 0.5em;
+    display: flex;
+    margin-bottom: 0.5em;
+    padding: 1em;
+}
+
+header {
+    align-items: center;
+}
+
+footer{
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero, #event, #weather, #news-release, #spotlights {
+    background-color: #DCE0D9;
+    padding: 5em 0;
+    margin-bottom: 0.5em;
+    border-radius: 2.5%;
+    text-align: center;
+}
+
+#spotlights div {
+    background-color: #DCE0D9;
+    padding: 3em;
+    border: solid #595959 2.5px;
+    border-radius: 0.5em;
+}
+
+#logo {
+    display: block;
+    max-width: 120px;
+    max-height: 120px;
+    order: 1;
+}
+
+header h1 {
+    order: 2;
+    
+}
+
+header .social-media {
+    order: 4;
+}
+
+header nav {
+    order: 3;
+}
+
+header #date {
+    order: 8;
+    flex-basis: 100%;
+    height: 0;
+}
+
+/*Menu toggle things*/
+a {
+    display: none;
+}
+
+a:first-child {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.responsive a {
+    display: block;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    a {}
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #hero, #event, #weather, #news-release, #spotlights {
+        grid-column: 1/4;
+    }
+
+
+
+}
