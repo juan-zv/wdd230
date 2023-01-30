@@ -56,6 +56,16 @@ header #date {
     height: 0;
 }
 
+.social-media {
+    max-width: 2em;
+}
+
+#footer-img {
+    max-width: 250px;
+    display: block;
+    align-self: center;
+}
+
 /*Menu toggle things*/
 nav a {
     display: none;
@@ -70,6 +80,7 @@ nav a:first-child {
 .responsive a {
     display: block;
 }
+
 
 
 
@@ -121,6 +132,15 @@ nav a:first-child {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header #date {
+        max-width: 280px;
     }
 
     #hero {
