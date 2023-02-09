@@ -1,0 +1,27 @@
+li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li button {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #666;
+  }
+
+h1, h2, h3, h4, h5, h6, p, li, label {
+    color: white;
+}
+
+main {
+    align-items: center;
+    text-align: center;
+    background-color: grey;
+    margin: 20% 20%;
+    padding: 10% 15%;
+    padding-top: 0;
+    border: solid black 3px;
+    border-radius: 2em;
+    
+}
