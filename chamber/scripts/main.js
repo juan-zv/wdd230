@@ -34,3 +34,24 @@ if (temp <= 50 && windspeed > 3) {
     let windchill = document.querySelector(".wc");
     windchill.textContent = chill;
 }
+
+
+//storage local and session FOR DISCOVER PAGE
+
+localStorage.setItem("name", "Julie Anderson - permanent");
+
+sessionStorage.setItem("class", "WDD230 - not permanent");
+
+// EJEMPLO PARA EL IF
+
+// if (!localStorage.getItem("lastVisit")) {
+//     localStorage.setItem("lastVisit", Date.now())
+//     h2 -> display "Welcome!"
+// }
+// else {
+//     let currentDate = Date.now()
+
+//     let diff = (currentDate - lastDate )
+
+//     display diff -> days since visited
+// }
