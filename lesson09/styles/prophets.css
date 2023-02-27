@@ -1,0 +1,23 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+section {
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 30px;
+    width: 300px;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: black;
+}
+
+.cards img {
+    width: 90%;
+    box-shadow: 5px 10px 8px 5px grey;
+}
