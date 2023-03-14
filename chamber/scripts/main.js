@@ -8,7 +8,7 @@ document.querySelector('#year-and-name').innerHTML = '&copy;' + year + " Juan Zu
 
 let currentDate = document.lastModified;
 
-document.querySelector('#last-modified').textContent = `Last Updated: ${currentDate}`;
+document.querySelector('#last-modified').textContent = `Last Modified: ${currentDate}`;
 
 document.querySelector("#date").textContent = formated_date;
 
