@@ -4,46 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STC Chamber of Commerce</title>
-    <link rel="icon" href="favicon.ico">
+    <title>STC Chamber of Commerce - Discover</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        <button type="button">&#10005</button>
+    </div>
     <header>
-        <div id="upper-header">
-            <img id="logo" src="images/logo.png" alt="logo">
-            <h1>STC Chamber of Commerce</h1>
-            <nav id="navigation">
-                <a class="ham" href="#">&#9776;</a>
-                <a href="#hero">Discover</a>
-                <a href="#hero">Directory</a>
-                <a href="footer">Join</a>
-                <a href="footer">Contact</a>
-            </nav>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt="STC Chamber of Commerce Logo"></a>
         </div>
-        <div id="sub-header">
-            <img class="social-media" src="images/facebook.png" alt="facebook">
-            <img class="social-media" src="images/linkedin.png" alt="linkedin">
-            <h3 id="date">Date</h3>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav id="menu">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </section>
+        <div id="date-container">
+            <p id="date"></p>
         </div>
-
     </header>
+
     <main>
-
+        <h1>Discover Seattle</h1>
+        <div class="discover">
+            <div>
+                <picture>
+                    <img src="images/yellowstone-min.jpg"
+                        data-src="images/yellowstone.jpg" alt="Space Needle">
+                </picture>
+                <h2>Yellowstone National Park</h2>
+                <p>
+                    The best months to visit Yellowstone are April, September, and October. 
+                    These “off season” months provide more chances to catch a glimpse of the local 
+                    wildlife and enjoy thinner crowds.
+                </p>
+            </div>
+            <div>
+                <picture>
+                    <img src="images/boise-min.jpg"
+                        data-src="images/boise.jpg" alt="Washington Beach">
+                </picture>
+                <h2>Boise</h2>
+                <p>
+                    Boise has a variety of big-city amenities but still has a small town feel.
+                    It is a perfect relaxing weekend getaway with beautiful parks and walking 
+                    trails, yummy restaurants and plenty of things to do.
+                </p>
+            </div>
+            <div>
+                <picture>
+                    <img src="images/sun-valley-min.jpg"
+                        data-src="images/sun-valley.jpg" alt="University of Washington">
+                </picture>
+                <h2>Sun Valley</h2>
+                <p>
+                    The world’s first ski lift, America’s first Dark Sky Reserve, rugged yet 
+                    scenic mountains, and deep connections to Ernest Hemingway scratch the surface
+                    of the surprising attractions in and around the Sun Valley area.
+                </p>
+            </div>
+            <div>
+                <picture>
+                    <img src="images/craters-of-the-moon-min.jpg"
+                        data-src="images/craters-of-the-moon.jpg" alt="Pike Place Market">
+                </picture>
+                <h2>Craters of the Moon National Monument</h2>
+                <p>
+                    Craters of the Moon offers countless opportunities for hiking, camping, cross-country
+                    skiing, wildlife viewing and backcountry travel. For casual travelers the seven-mile
+                    Loop Road and trails in the National Park Service Monument and Preserve provide easy
+                    access to this weird and scenic landscape.
+                </p>
+            </div>
+            <div>
+                <picture>
+                    <img src="images/idaho-falls-min.jpg"
+                        data-src="images/idaho-falls.jpg" alt="Idaho Falls View">
+                </picture>
+                <h2>Idaho Falls</h2>
+                <p>
+                    Take a walking tour to learn about turn-of-the-century buildings characterized by Art Deco,
+                    Renaissance Revival and Georgian Revival architecture. Some of the building facades remain 
+                    largely unchanged, though inside you’ll find boutiques, local eateries, galleries, antique
+                    shops and pubs.
+                </p>
+            </div>
+        </div>
+        <div id="visit-num-container">
+            <h3><span class="label">Number of Visits: </span><span id="visits"></span></h3>
+        </div>
     </main>
+
     <footer>
-        <img id="footer-img" src="images/logo.png" alt="footer-img">
-        <h3>STC Chamber of Commerce</h3>
-        <h4>Science and Technology Building, BYU-Idaho, Rexburg, ID 83440</h4>
-        <a href="https://www.byui.edu/">Info</a>
-        <a href="tel:000-000-0000">Call us</a>
-        <a href="https://maps.google.com/">Map</a>
-
-        <p id="year-and-name">Year and Name</p>
-        <h4>Juan Zurita</h6>
-        <p>WDD230 Project</p>
-        <p id="last-modified">Last Modified</p>
-
+        <section id="about">
+            <img src="images/logo.png" alt="Seattle Chamber of Commerce Logo">
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>510 S Center St</p>
+                <p>Rexburg, ID 83440</p>
+                <a href="https://goo.gl/maps/KnvfignBR2ubDgFP6" target="_blank">Directions</a> 
+            </div>
+            <div id="contact-info">
+                <h3>Contact Us</h3>
+                <p>info@byui.com</p>
+                <p>(123) 456-7890</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> STC Chamber of Commerce | Juan Zurita | WDD230</p>
+            <p id="lastModified"></p>
+            <p><span id="lastModified"></span></p>
+        </section>
     </footer>
     <script src="scripts/main.js"></script>
 </body>

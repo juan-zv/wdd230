@@ -1,0 +1,72 @@
+{
+    "companies": [
+        {
+            "name": "Apple Inc.",
+            "address": "1 Apple Park Way, Cupertino, CA 95014",
+            "phone": "1-408-996-1010",
+            "website": "https://www.apple.com",
+            "image": "images/apple.jpg"
+        },
+        {
+            "name": "Microsoft Corporation",
+            "address": "One Microsoft Way, Redmond, WA 98052",
+            "phone": "1-800-642-7676",
+            "website": "https://www.microsoft.com",
+            "image": "images/microsoft.jpg"
+        },
+        {
+            "name": "Amazon.com, Inc.",
+            "address": "410 Terry Ave N, Seattle, WA 98109",
+            "phone": "1-206-266-1000",
+            "website": "https://www.amazon.com",
+            "image": "images/amazon.jpg"
+
+        },
+        {
+            "name": "Facebook, Inc.",
+            "address": "1 Hacker Way, Menlo Park, CA 94025",
+            "phone": "1-650-308-7300",
+            "website": "https://www.facebook.com",
+            "image": "images/facebook.jpg"
+
+        },
+        {
+            "name": "Alphabet Inc.",
+            "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+            "phone": "1-650-253-0000",
+            "website": "https://abc.xyz/",
+            "image": "images/alphabet.jpg"
+
+        },
+        {
+            "name": "Tesla, Inc.",
+            "address": "3500 Deer Creek Road, Palo Alto, CA 94304",
+            "phone": "1-650-681-5100",
+            "website": "https://www.tesla.com",
+            "image": "images/tesla.jpg"
+
+        },
+        {
+            "name": "Walmart Inc.",
+            "address": "702 SW 8th St, Bentonville, AR 72712",
+            "phone": "1-800-925-6278",
+            "website": "https://www.walmart.com",
+            "image": "images/walmart.jpg"
+
+        },
+        {
+            "name": "JP Morgan Chase & Co.",
+            "address": "383 Madison Ave, New York, NY 10179",
+            "phone": "1-212-270-6000",
+            "website": "https://www.jpmorganchase.com",
+            "image": "images/jp-morgan.jpg"
+        },
+        {
+            "name": "The Procter & Gamble Company",
+            "address": "1 P&G Plaza, Cincinnati, OH 45202",
+            "phone": "1-800-742-6253",
+            "website": "https://us.pg.com",
+            "image": "images/procter-gamble.jpg"
+        }
+    ]
+}

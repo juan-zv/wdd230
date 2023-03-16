@@ -4,63 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STC Chamber of Commerce</title>
+    <title>STC Chamber of Commerce - Home</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="normalize" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        <button type="button">&#10005</button>
+    </div>
     <header>
-        <div id="upper-header">
-            <img id="logo" src="images/logo.png" alt="logo">
-            <h1>STC Chamber of Commerce</h1>
-            <nav id="navigation">
-                <a class="ham" href="#">&#9776;</a>
-                <a href="#hero">Discover</a>
-                <a href="#hero">Directory</a>
-                <a href="footer">Join</a>
-                <a href="footer">Contact</a>
-            </nav>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="STC Chamber of Commerce Logo"></a>
         </div>
-        <div id="sub-header">
-            <img class="social-media" src="images/facebook.png" alt="facebook">
-            <img class="social-media" src="images/linkedin.png" alt="linkedin">
-            <h3 id="date">Date</h3>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav id="menu">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+        </section>
+        <div id="date-container">
+            <p id="date"></p>
         </div>
-
     </header>
-    <main>
-        <div id="hero">
-            <h2>Hero with site name and call to action</h2>
-        </div>
-        <div id="event">
-            <h2>Event</h2>
-        </div>
-        <div id="weather">
+
+    <main class="home">
+        <h1>Seattle Chamber of Commerce</h1>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/hero-img-large.jpg">
+                <source media="(min-width: 700px)" srcset="images/hero-img-medium.jpg">
+                <img src="images/hero-img-small.jpg" alt="STC Chamber of Commerce Hero Image">
+            </picture>
+            <button type="button">Discover Us</button>
+        </section>
+        <section id="event">
+            <h2>Events</h2>
+            <hr>
+            <p>March 16th: Resume Polishing Workshop from 5pm to 6pm in STC243</p>
+            <p>March 30th: Robotics and Senior Project Display - STC Lobby 4:00-6:00 p.m. </p>
+            <p>April 6th: Graduation - Commencement -6:00 p.m. at BYUI Center</p>
+        </section>
+        <section id="weather">
             <h2>Weather</h2>
-        </div>
-        <div id="news-release">
-            <h2>News Release</h2>
-        </div>
-        <div id="spotlights">
-            <h2>Spotlights</h2>
-            <div>spotlight 1</div>
-            <div>spotlight 2</div>
+            <div id="weather_top">
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <h2><span id="temp"></span>&#8457;</h2>
+            </div>
+            <hr>
+            <p>Wind: <span id="wind"></span> MPH</p>
+            <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+        </section>
+        <section id="news">
+            <h2>BYUI - STC News</h2>
+            <hr>
+            <h3>COME SEE THE AWESOME ROBOTICS AND SENIOR PROJECT DISPLAYS!</h3>
+            <p>
+                March 30th:  Robotics and Senior Project Display - STC Lobby 4:00-6:00 p.m.
+            </p>
+            <hr>
+            <h3>SWE SOCIETY ACTIVITY - MENTAL WELLNESS DAY</h3>
+            <p>
+                TUESDAY, MARCH 14TH AT 5:30 IN STC 398
+                Join us to learn how to balance life, school, and work while avoiding
+                burnout! Pie will be provided. Happy Pi Day!
+            </p>
+            <hr>
+            <h3>ACM SOCIETY</h3>
+            <p>
+                Hack a Thon Preparation Workshop
 
-        </div>
+                Wednesday, March 15th at 4:30 in STC 243
+                
+                Food served!
+            </p>
+            <hr>
+            <h3>NEWS TITLE HERE</h3>
+            <p>
+                NEWS ARTICLE HERE
+            </p>
+        </section>
+        <section id="join">
+            <h2>Join Us</h2>
+            <p>
+                Join us and be part of the STC Chamber of Commerce. You will the community
+                and will be able to expand your business!
+            </p>
+            <a href="join.html"><button>Join Us</button></a>
+        </section>
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spot1">
+                <a href="#"><h3>Sell through Amazon</h3></a>
+                <img src="images/amazon.jpg" alt="Pike Place Market">
+            </div>
+            <div id="spot2">
+                <a href="#"><h3>Try new Apple products</h3></a>
+                <img src="images/apple.jpg" alt="Plant Shop Cafe">
+            </div>
+            <div id="spot3">
+                <a href="#"><h3>See latest Microsoft's deals and news</h3></a>
+                <img src="images/microsoft.jpg" alt="Grocery Shopping">
+            </div>
+        </section>
     </main>
+
     <footer>
-        <img id="footer-img" src="images/logo.png" alt="footer-img">
-        <h3>STC Chamber of Commerce</h3>
-        <h4>Science and Technology Building, BYU-Idaho, Rexburg, ID 83440</h4>
-        <a href="https://www.byui.edu/">Info</a>
-        <a href="tel:000-000-0000">Call us</a>
-        <a href="https://maps.google.com/">Map</a>
-
-        <p id="year-and-name">Year and Name</p>
-        <h4>Juan Zurita</h6>
-        <p>WDD230 Project</p>
-        <p id="last-modified">Last Modified</p>
-
+        <section id="about">
+            <img src="images/logo.png" alt="Seattle Chamber of Commerce Logo">
+            <div id="address">
+                <h3>Visit Us</h3>
+                <p>510 S Center St</p>
+                <p>Rexburg, ID 83440</p>
+                <a href="https://goo.gl/maps/KnvfignBR2ubDgFP6" target="_blank">Directions</a> 
+            </div>
+            <div id="contact-info">
+                <h3>Contact Us</h3>
+                <p>info@byui.com</p>
+                <p>(123) 456-7890</p>
+            </div>
+        </section>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> STC Chamber of Commerce | Juan Zurita | WDD230</p>
+            <p id="lastModified"></p>
+            <p><span id="lastModified"></span></p>
+        </section>
     </footer>
     <script src="scripts/main.js"></script>
 </body>
