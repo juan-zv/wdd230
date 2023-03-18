@@ -1,4 +1,4 @@
-.cards {
+/* .cards {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -20,4 +20,58 @@ h1, h2 {
 .cards img {
     width: 90%;
     box-shadow: 5px 10px 8px 5px grey;
+} */
+
+header, footer {
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
+
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+    color: navy;
+    border-bottom: 1px solid #bbb;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  margin-left: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+}
+
+
+img {
+    width: auto;
+	max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+    padding: 25px;
+    margin: 20px;
+}
+
+section {
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
