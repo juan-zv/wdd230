@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu&display=swap');
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -27,10 +26,6 @@ body {
     text-align: center;
     color: #e5e5e5;
     background-color: #3a3a3a;
-}
-
-.hide {
-    display: none;
 }
 
 #banner button {
@@ -76,12 +71,6 @@ header img {
     grid-column: 1/4;
 }
 
-.show {
-    display: block;
-    margin: auto;
-    grid-column: 1/4;
-}
-
 #menu ul {
     padding-left: 0;
 }
@@ -92,11 +81,9 @@ header img {
 }
 
 #menu a {
-    color: white;
     text-decoration: none;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: 500;
+    color: #e5e5e5;
+    font-size: 2em;
 }
 
 #menu a:hover {
@@ -104,6 +91,7 @@ header img {
 }
 
 #hamburger {
+    display: block;
     color: #e5e5e5;
     text-decoration: none;
     grid-column: 3;
@@ -112,7 +100,17 @@ header img {
     font-size: 3em;
 }
 
-#hamburger:hover {
+#close {
+    display: none;
+    color: #e5e5e5;
+    text-decoration: none;
+    grid-column: 3;
+    text-align: right;
+    margin: auto;
+    font-size: 3em;
+}
+
+#hamburger:hover, #close:hover {
     color: #617073;
 }
 
@@ -167,7 +165,7 @@ main section,  main section div {
     text-align: center;
 }
 
-#hero, #spot1, #spot2, #spot3 {
+#hero {
     display: inline-block;
     overflow: hidden;
 }
@@ -195,34 +193,32 @@ main section,  main section div {
 }
 
 #spotlights {
-    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    padding-bottom: 125px;
+    margin-bottom: 50px;
+
 }
 
-#spot1 img, #spot2 img, #spot3 img {
-    height: 100%;
-    width: 100%;
+#spotlights div {
+    display: block;
+    margin: 50px 25px;
+}
+
+#spotlights div img {
+    max-width: 350px;
     object-fit: cover;
 }
 
-#spot1 h3, #spot2 h3, #spot3 h3 {
-    background-color: black;
-    color: #e5e5e5;
-    font-size: 2em;
-}
-
-#spotlights a {
+#spotlights div a {
+    display: block;
     text-decoration: none;
 }
 
-#spotlights h3:hover {
-    color: #617073;
-}
-
-#spot1, #spot2, #spot3 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
-    height: 400px;
+#spotlights div h3 {
+    color: black;
 }
 
 #news, #event, #join, #weather {
@@ -419,14 +415,6 @@ label, textarea, select{
     width: 50px;
 }
 
-tr:nth-child(odd) {
-    background-color: #e5e5e5;
-}
-
-tr td {
-    display: block;
-}
-
 #weather_top {
     display: flex;
     flex-wrap: wrap;
@@ -461,10 +449,51 @@ tr td {
     margin: auto;
 }
 
+#cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+#cards div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#cards img {
+    max-width: 350px;
+}
 
 
 main picture img {
     max-width: 100%;
+}
+
+thead {
+    display: none;
+}
+
+table {
+    text-align: center;
+    justify-content: center;
+}
+
+table img {
+    max-width: 150px;
+}
+tr, td {
+    display: block;
+}
+
+tr {
+    background-color: #617073;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 /*---------------------------------------------MEDIUM SIZE----------------------------------- */
@@ -540,27 +569,27 @@ main picture img {
 
     #spotlights {
         grid-column: 1/3;
-        grid-row: 3;
-        display: flex;
-        flex-direction: row;
-        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+        padding: 0; 
+        padding-bottom: 50px;   
     }
 
-    #spot1, #spot2, #spot3 {
-        width: 31%;
+    #spot1 {
+        grid-column: 1;
+        grid-row: 1;
     }
 
-    #spot1 img, #spot2 img, #spot3 img {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        bottom: 125px;
+    #spot2 {
+        grid-column: 2;
+        grid-row: 1;
     }
 
-    #spot1 h3, #spot2 h3, #spot3 h3 {
-        position: relative;
-        top: 75px;
-        font-size: 2em;
+    #spot3 {
+        grid-column: 1/3;
+        grid-row: 2;
     }
 
 
@@ -589,6 +618,38 @@ main picture img {
     #copyright-large {
         display: block;
     }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #cards img {
+        max-width: 350px;
+    }
+
+    .card {
+        margin: 25px auto;
+    }
+
+    table {
+        padding: 50px 5%;
+    }
+
+    thead {
+        display:table-header-group;
+        color: white;
+    }
+
+    tr {
+        display: table-row;
+    }
+
+    td {
+        display: table-cell;
+    }
+
 }
 
 /*---------------------------------------------LARGE SIZE----------------------------------- */
@@ -690,6 +751,28 @@ main picture img {
         grid-row: 3;
     }
 
+    #spotlights {
+        grid-column: 3;
+        grid-row: 1/4;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 10px;
+        height: 96.5%;
+    }
+
+    #spotlights div {
+        margin: 0 auto;
+        padding: 25px;
+        max-height: 400px;
+        max-width: fit-content;
+    }
+
+    #spotlights img {
+        width: 100%;
+    }
+
+
     #news {
         grid-column: 2;
         grid-row: 3;
@@ -703,49 +786,8 @@ main picture img {
         color: #3a3a3a;
     }
 
-    #spotlights {
-        grid-column: 3;
-        grid-row: 1/4;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: auto
-    }
-
-    #spot1 img, #spot2 img, #spot3 img {
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        position: relative;
-        bottom: 150px;
-    }
-
-    #spot1 h3, #spot2 h3, #spot3 h3 {
-        z-index: 3;
-        position: relative;
-        top: 125px;
-        font-size: 2em;
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-
-    #spotlights a {
-        text-decoration: none;
-    }
-
-    #spotlights h3:hover {
-        color: #617073;
-    }
-
-    #spot1, #spot2, #spot3 {
-        width: 95%;
-        height: 400px;
-        margin: 10px;
-    }
-
-
     button:hover {
-        background-color: #fca311;
+        background-color: #617073;
         
     }
 
@@ -790,6 +832,21 @@ main picture img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1rf 1fr 1fr;
+        text-align: center;
+    }
+
+    #cards img {
+        max-width: 350px;
+    }
+
+    .card {
+        margin: 25px auto;
     }
 
     
