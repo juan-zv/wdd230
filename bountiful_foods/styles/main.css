@@ -18,7 +18,7 @@ a:hover {
     color: #05668D;
 }
 
-header {
+header, footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
@@ -70,3 +70,48 @@ nav a {
 
 /* ------------------------------------------------------------ */
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+}
+
+#images img {
+    display: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#weather {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    justify-content: center;
+    text-align: center;
+    background-color: #05668D;
+    padding: 15px;
+}
+#weather img {
+    padding: 15px;
+}
+
+#weather h2, #weather h3, #weather p {
+    margin: 0 auto;
+}
+
+#information {
+    grid-column: 2/4;
+    display: flex;
+}
