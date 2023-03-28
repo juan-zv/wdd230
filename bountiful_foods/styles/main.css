@@ -104,7 +104,9 @@ main {
     padding: 15px;
 }
 #weather img {
+    margin: 0 auto;
     padding: 15px;
+    max-width: 15%;
 }
 
 #weather h2, #weather h3, #weather p {
@@ -113,5 +115,23 @@ main {
 
 #information {
     grid-column: 2/4;
-    display: flex;
+    display: grid;
+}
+
+#information h2 {
+    grid: 1/4;
+    text-align: center;
+}
+
+#information div {
+    display: block;
+    max-width: 25%;
+}
+
+#news1 {
+    
+}
+
+#information div img {
+    max-width: 350px;
 }
