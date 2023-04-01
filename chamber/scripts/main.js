@@ -13,18 +13,6 @@ document.querySelector('#copyrightYear').innerHTML = year;
 let formated_date = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 document.getElementById("date").innerHTML = formated_date;
 
-//Discover Page Days Visited-----------------------------------------------------
-const visitsDisplay = document.querySelector("#visits");
-
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit, Welcome!`;
-}
-numVisits++;
-localStorage.setItem("visits-ls", numVisits);
 
 
 //Tuesday and Thursday Banner-----------------------------------------------
@@ -44,55 +32,37 @@ bannerButton.addEventListener("click", ()=> {
 
 
 // Hamburger Menu---------------------------------------------
-let hamburger = document.getElementById('hamburger');
-let menu = document.getElementById('menu');
+let hamburger = document.getElementById("hamburger");
+let close = document.getElementById("close");
+let menu = document.getElementById("menu");
 
-
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle ='hide';
-
+hamburger.addEventListener("click", ()=> {
+    close.style.display = "block";
+    hamburger.style.display = "none";
+    menu.style.display = "block";
 });
 
+close.addEventListener("click", ()=> {
+    hamburger.style.display = "block";
+    close.style.display = "none";
+    menu.style.display = "none";
+})
 
-//Lazy load---------------------------------------------------------------------
-const images = document.querySelectorAll('img');
-const options = { threshold: 0.5, rootMargin: '0px 0px -100px 0px' };
 
-const preloadImage = (img) => {
-  const src = img.getAttribute('data-src');
-  if (!src) {
-    return;
-  }
-  img.src = src;
+//-----------------------------------------
+
+
+//Discover Page Days Visited-----------------------------------------------------
+const visitsDisplay = document.querySelector("#visits");
+
+var firstVisitDate = new Date(localStorage.getItem("firstVisitDate"));
+
+var timeDiff = Math.abs(date.getTime() - firstVisitDate.getTime());
+var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+localStorage.setItem("firstVisitDate", date);
+
+if (localStorage.getItem("firstVisitDate") === null) {
+    localStorage.setItem("firstVisitDate", date);
 }
-
-const io = new IntersectionObserver((entries, io) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            preloadImage(entry.target);
-            io.unobserve(entry.target);
-        }
-    });
-}, options);
-
-images.forEach(image => {
-    io.observe(image);
-});
-
-
-//Thank you pop up message--------------------------------------------------------
-let submitForm = document.getElementById("submit");
-
-submitForm.onsubmit = () => {window.open("index.html")};
-
-
-//FETCH DATA--------------------------------------------------------------------------
-let url = "https://juan-zv.github.io/wdd230/data.json";
-
-let response = fetch(url);
-
-let data = response.json();
-
-console.log(data);
+visitsDisplay.textContent = daysDiff;

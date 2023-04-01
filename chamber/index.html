@@ -12,13 +12,13 @@
 <body>
     <div id="banner">
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-        <button type="button">&#10005</button>
+        <button type="button">&#10005;</button>
     </div>
     <header>
         <div id="logo">
             <a href="index.html"><img src="images/logo.webp" alt="STC Chamber of Commerce Logo"></a>
         </div>
-        <a href="#" id="hamburger">&#9776;</a>
+        <a href="#" id="hamburger">&#9776;</a><a href="#" id="close">&#10005;</a>
         <nav id="menu">
             <ul>
                 <li><a href="discover.html">Discover</a></li>
@@ -45,7 +45,7 @@
                 <source media="(min-width: 700px)" srcset="images/hero-img-medium.jpg">
                 <img src="images/hero-img-small.jpg" alt="STC Chamber of Commerce Hero Image">
             </picture>
-            <button type="button">Discover Us</button>
+            <button type="button" onclick="window.location.href = 'discover.html'">Discover Us</button>
         </section>
         <section id="event">
             <h2>Events</h2>
@@ -57,12 +57,12 @@
         <section id="weather">
             <h2>Weather</h2>
             <div id="weather_top">
-                <img src="images/weather-icon.svg" alt="Weather Icon">
-                <h2><span id="temp"></span>&#8457;</h2>
+                <h3>Rexburg, Idaho</h3>
+                <img id="weather_icon" alt=""/>
+                <h3 id="temp"><span id='t'></span>°F</h3>
+                <p id='condition'></p>
+                <p>WindSpeed: <span id='ws'></span>mph</p>
             </div>
-            <hr>
-            <p>Wind: <span id="wind"></span> MPH</p>
-            <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
         </section>
         <section id="news">
             <h2>BYUI - STC News</h2>
@@ -99,21 +99,21 @@
                 Join us and be part of the STC Chamber of Commerce. You will the community
                 and will be able to expand your business!
             </p>
-            <a href="join.html"><button>Join Us</button></a>
+            <button><a href="join.html">Join Us</a></button>
         </section>
         <section id="spotlights">
             <h2>Business Spotlights</h2>
             <div id="spot1">
-                <a href="#"><h3>Sell through Amazon</h3></a>
                 <img src="images/amazon.jpg" alt="Pike Place Market">
+                <a href="https://www.amazon.com/" target="_blank"><h3>Sell through Amazon</h3></a>
             </div>
             <div id="spot2">
-                <a href="#"><h3>Try new Apple products</h3></a>
                 <img src="images/apple.jpg" alt="Plant Shop Cafe">
+                <a href="https://www.apple.com/" target="_blank"><h3>Try new Apple products</h3></a>
             </div>
             <div id="spot3">
-                <a href="#"><h3>See latest Microsoft's deals and news</h3></a>
                 <img src="images/microsoft.jpg" alt="Grocery Shopping">
+                <a href="https://www.microsoft.com/en-us/?ql=4" target="_blank"><h3>See latest Microsoft's deals and news</h3></a>
             </div>
         </section>
     </main>
@@ -135,10 +135,10 @@
         </section>
         <section id="copyright">
             <p>&copy; <span id="copyrightYear"></span> STC Chamber of Commerce | Juan Zurita | WDD230</p>
-            <p id="lastModified"></p>
             <p><span id="lastModified"></span></p>
         </section>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
