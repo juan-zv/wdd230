@@ -1,3 +1,25 @@
+var lastModified = document.lastModified;
+let lastModifiedSpan = document.getElementById("lastModified");
+lastModifiedSpan.innerHTML = lastModified;
+
+
+var images = ['hero-img-1', 'hero-img-2', 'hero-img-3', 'hero-img-4'];
+var index = 0;
+
+function cycleImages() {
+    document.getElementById(images[index]).style.display = 'none';
+
+    index++;
+    if (index >= images.length) {
+        index = 0;
+    }
+    document.getElementById(images[index]).style.display = 'block';
+
+    setTimeout(cycleImages, 3000);
+}
+
+cycleImages();
+
 const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Los%20Angeles%2C%20California?unitGroup=metric&key=B7NKJ24KZHZ58EX3SH9EE8J9E&contentType=json";
 const getWeather = async () => {
     const response = await fetch(apiURL);
@@ -39,3 +61,5 @@ const getNews = async () => {
 }
 
 getNews();
+
+
