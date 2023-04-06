@@ -39,6 +39,8 @@ footer img{
 footer a {
     display: block;
     font-weight: 700;
+    margin: 0 auto;
+    max-width: fit-content;
 }
 
 #logo-container {
@@ -175,6 +177,11 @@ main {
     grid-template-columns: auto auto auto;
     max-width: fit-content;
     object-fit: cover;
+    background-color: #931621;
+}
+
+#information h2, #information h3, #information p {
+    color: azure;
 }
 
 #information h2 {
