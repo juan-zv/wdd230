@@ -5,6 +5,11 @@
     color: black;
 }
 
+#map {
+    height: 400px;
+    width: 100%;
+  }
+
 body {
     padding: 0;
     margin: 0;

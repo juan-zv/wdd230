@@ -1,7 +1,7 @@
 var lastModified = document.lastModified;
 let lastModifiedSpan = document.getElementById("lastModified");
 lastModifiedSpan.innerHTML = lastModified;
-
+//-------------------------------------------------------------------
 
 var images = ['hero-img-1', 'hero-img-2', 'hero-img-3', 'hero-img-4'];
 var index = 0;
@@ -20,6 +20,8 @@ function cycleImages() {
 
 cycleImages();
 
+//----------------------------------------------------------------------------------------------------------------------------------------
+
 const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Los%20Angeles%2C%20California?unitGroup=metric&key=B7NKJ24KZHZ58EX3SH9EE8J9E&contentType=json";
 const getWeather = async () => {
     const response = await fetch(apiURL);
@@ -36,6 +38,7 @@ document.querySelector('#weather_icon').alt= data.currentConditions.conditions +
 
 getWeather();
 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 const newsAPIURL = "https://newsapi.org/v2/everything?q=Los-Angeles-California-Food&sortBy=publishedAt&apiKey=2e9124a7be4943789b86e0761026ee46";
 const getNews = async () => {
@@ -62,4 +65,9 @@ const getNews = async () => {
 
 getNews();
 
+//-------------------------------------------------------------------------------------
+
+const totalCount = localStorage.getItem('smoothieCount') || 0;
+const totalElement = document.getElementById('number-of-drinks');
+totalElement.textContent = totalCount;
 

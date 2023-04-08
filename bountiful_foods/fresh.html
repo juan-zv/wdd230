@@ -25,23 +25,38 @@
         <a id="close" href="#">&#10005;</a>
     </header>
     <main>
-        <section id="form">
-            <form action="">
-                <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
-                <label for="email">Email*<input type="email" id="email" name="email" required></label>
-                <label for="phone">Phone*<input type="tel" id="phone" name="phone" required></label>
-                <label for="fruit">Select up to 3 types of fruit:</label>
-                <select name="fruits" id="fruits" multiple>
-    
-                </select>
-                <label for="instructions">Add Special Instructions<input type="text" id="instructions" name="instructions"></label>
-                <button type="submit">Submit</button>
-
-            </form>
-        </section>
-        <section id="output">
-
-        </section>
+        <h1>Fruit Smoothie Order Form</h1>
+	    <form id="order-form">
+	    	<div class="form-group">
+	    		<label for="first-name">First Name:</label>
+	    		<input type="text" id="first-name" name="first-name" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="email">Email:</label>
+	    		<input type="email" id="email" name="email" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="phone">Phone:</label>
+	    		<input type="tel" id="phone" name="phone" required>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit1">Fruit 1:</label>
+	    		<select id="fruits1" name="fruit1" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit2">Fruit 2:</label>
+	    		<select id="fruits2" name="fruit2" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="fruit3">Fruit 3:</label>
+	    		<select id="fruits3" name="fruit3" required></select>
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="special-instructions">Special Instructions:</label>
+	    		<textarea id="special-instructions" name="special-instructions"></textarea>
+	    	</div>
+	    	<button type="submit">Submit</button>
+	    </form>        
         
     </main>
     <footer>
@@ -57,6 +72,6 @@
             <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
         </div>
     </footer>
-    <script src="scripts/fresh.js"></script>
+	<script src="scripts/fresh.js"></script>
 </body>
 </html>
