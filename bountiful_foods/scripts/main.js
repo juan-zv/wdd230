@@ -38,6 +38,11 @@ document.querySelector('#weather_icon').alt= data.currentConditions.conditions +
 
 getWeather();
 
+//-------------------------------------------------------------------------------------
+
+const totalCount = localStorage.getItem('smoothieCount') || 0;
+const totalElement = document.getElementById('number-of-drinks');
+totalElement.textContent = totalCount;
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 const newsAPIURL = "https://newsapi.org/v2/everything?q=Los-Angeles-California-Food&sortBy=publishedAt&apiKey=2e9124a7be4943789b86e0761026ee46";
@@ -65,9 +70,4 @@ const getNews = async () => {
 
 getNews();
 
-//-------------------------------------------------------------------------------------
-
-const totalCount = localStorage.getItem('smoothieCount') || 0;
-const totalElement = document.getElementById('number-of-drinks');
-totalElement.textContent = totalCount;
 
