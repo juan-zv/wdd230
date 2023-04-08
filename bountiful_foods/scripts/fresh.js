@@ -1,10 +1,10 @@
 var lastModified = document.lastModified;
 let lastModifiedSpan = document.getElementById("lastModified");
 lastModifiedSpan.innerHTML = lastModified;
-//-------------------------------------------------------------------//
+//----------------------------------------------------------------------------------
 
 const submitButton = document.querySelector('button[type="submit"]');
-
+let smoothieCount = parseInt(localStorage.getItem("smoothieCount"));
 submitButton.addEventListener('click', function(event) {
     event.preventDefault();
     
@@ -14,16 +14,7 @@ submitButton.addEventListener('click', function(event) {
     
 });
 
-
-
-
-
-
-//---------------------------------------------------------------------//
-
-
-
-
+//------------------------------------------------------------------------------------
 
 const fruitsURL = "https://andejuli.github.io/wdd230/fruit.json";
 const getFruits = async () => {
@@ -84,6 +75,19 @@ function calculateNutrition() {
     document.getElementById('sugar').innerHTML = totalSugar + ' g';
     document.getElementById('calories').innerHTML = totalCalories + ' cal';
 }
+
+function calculateNutrition1() {
+    const getFruits = async () => {
+        const response = await fetch("https://andejuli.github.io/wdd230/fruit.json");
+        const fruitsInfo = await response.json();
+        let fruit1 = document.getElementById("fruits1");
+
+        console.log(fruit1.target.value);
+    }
+
+}
+
+calculateNutrition1();
 
 function submitForm(event) {
     event.preventDefault();
